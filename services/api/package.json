@@ -1,0 +1,20 @@
+{
+  "name": "@paradox/api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "eval": "node dist/eval/runner.js"
+  },
+  "dependencies": {
+    "@paradox/shared": "workspace:*",
+    "@paradox/api-contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
